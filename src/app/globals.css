@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input,
+textarea,
+select,
+ol,
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:focus,
+*:focus-visible {
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  text-decoration: none;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+  border: none;
+}
+
+button:focus,
+input:focus {
+  box-shadow: none !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: auto;
+  background: #fff;
+}
+
+html.dark {
+  background: #000 !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* text-wrap: balance; */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Jost", sans-serif;
+}
+
+.back-blur {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero_baner {
+  background-image: url("/images/chess-scaled.png");
+  background-size: 5% auto;
+}
+.light .line-text {
+  color: #000;
+  -webkit-text-fill-color: #000;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #000;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.m_font {
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.line-text {
+  color: #000;
+  -webkit-text-fill-color: #000;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #fff;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee1 {
+  animation: marquee 5s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse 5s linear infinite;
+}
+
+.dark .blur_backg {
+  background: #6161e908;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.blur_backg {
+  background: #6161e908;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #00000030;
+}
+
+.breadcm {
+  background-image: url("/images/herobg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
